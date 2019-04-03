@@ -1,0 +1,106 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/index.css" type="text/css" />
+		<title></title>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#login_button").click(function() {
+					var user_name = $("#user_name").val();
+					var user_pwd = $("#user_pwd").val();
+					$.ajax({
+						url: "http://112.74.55.80/login",
+						data: {
+							user_name: user_name,
+							user_pwd: user_pwd
+						},
+
+
+						type: "POST",
+						dataType: "json",
+						success: function(data) {
+							if (data.trim() == "OK") {
+								window.location.href = "classes.html";
+							} else {
+								alert("error");
+							}
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div id="main" class="main" style="background-image: url(img/background.jpg); background-repeat: no-repeat; background-size: 100% 100%;  ">
+			<div class="index_img">
+				<img src="img/cloud.png" style="width: 70%;" />
+
+			</div>
+
+			<div id="index_form" class="index_form">
+
+
+
+
+				<div class="flex-cell flex-row">
+
+
+					<form>
+
+						<input type="text" id="user_name" placeholder="账号:" class="index_text flex-cell flex-row index_character index_more_character" />
+					</form>
+				</div>
+				<div class="flex-cell flex-row">
+					<form>
+						<input type="password" id="user_pwd" placeholder="密码:" class="index_text flex-cell flex-row index_character index_more_character" />
+					</form>
+
+				</div>
+				<div class="flex-cell flex-row">
+					<form>
+						<input type="button" id="login_button" class="index_button flex-cell flex-row index_more_character index_character"
+						 value=" 登录" align="center" />
+
+					</form>
+				</div>
+
+
+
+				<div class="index_form_loginMesssage ">
+					<div>
+						<form>
+							<label class="index_character index_more_character ">注册蓝墨账号
+							</label>
+							<form>
+					</div>
+					<div>
+						<label class="index_character index_more_character">无法登录？
+						</label>
+						</form>
+						<form>
+					</div>
+				</div>
+
+				<div class="index_form_loginWay ">
+					<form>
+						<label class="index_character index_more_character ">使用学校账号密码登录
+						</label>
+
+						</label>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+
+</html>

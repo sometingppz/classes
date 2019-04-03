@@ -1,0 +1,110 @@
+* {
+	font-family: "微软雅黑";
+	padding: 0;
+	margin: 0;
+	font-size: 10vx;
+}
+
+#mine_header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: lightskyblue;
+	height: 13vh;
+	width: 100%;
+}
+
+#classes_main {
+	width: 100%;
+	height: 74vh;
+	background-color: gainsboro;
+}
+
+#classes_information {
+	height: 15vh;
+	width: 100%;
+	display: flex;
+	background: white;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex: 1;
+	font-size: 3.5vh;
+}
+
+#mine_footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: lightskyblue;
+	height: 13vh;
+	
+	width: 100%;
+}
+
+.mine_headPortrait {
+	display: flex;
+	background: white;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mine_text {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex: 1;
+}
+
+.mine_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+}
+
+.mine_header_img {
+	width: 5vw;
+}
+
+.mine_headPortrait_left {
+	display: flex;
+	align-items: center;
+}
+
+.mine_header_left {
+	display: flex;
+	justify-content: center;
+}
+
+.mine_header_right {
+	display: flex;
+	justify-content: center;
+}
+#class_weather{
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	 align-content:space-around;
+}
+#place{
+	width: 33%;
+	text-align: center;
+	font-size: 3vw;
+	color: white;
+}
+#weather{
+	width: 33%;
+		text-align: center;
+		font-size: 3vw;
+	color: white;
+}
+#temperature{
+	width: 33%;
+		text-align: center;
+		font-size: 3vw;
+	color: white;
+}
